@@ -17,3 +17,8 @@ Run the engine using :
 ```
 python RoadGraphEngine.py <latitude in deg> <longitude in deg> <diameter_in_meters>
 ```
+
+Exemple for Geneva with 1km diamater
+```
+python RoadGraphEngine.py 46.204833 6.143056 1000
+```
