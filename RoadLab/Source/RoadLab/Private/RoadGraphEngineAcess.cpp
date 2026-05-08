@@ -3,8 +3,13 @@
 
 #include "RoadGraphEngineAcess.h"
 
-RoadGraphEngineAcess::RoadGraphEngineAcess(){
+URoadGraphEngineAcess::URoadGraphEngineAcess(){
+	UE_LOG(LogTemp, Log, TEXT("RoadGraphEngine : Constructor"));
 }
 
-RoadGraphEngineAcess::~RoadGraphEngineAcess(){
+URoadGraphEngineAcess::~URoadGraphEngineAcess(){
+}
+
+void URoadGraphEngineAcess::StartProcess(float lat, float lon, float diam) {
+	UE_LOG(LogTemp, Log, TEXT("RoadGraphEngine : start external process"));
 }

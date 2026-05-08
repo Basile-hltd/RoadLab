@@ -3,19 +3,23 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "MyPythonProcess.generated.h"
+#include "UObject/Object.h"
+#include "GenericPlatform/GenericPlatformProcess.h"
+#include "RoadGraphEngineAcess.generated.h"
 
 /**
  * 
  */
 UCLASS(BlueprintType)
-class ROADLAB_API RoadGraphEngineAcess : public UObject {
+class ROADLAB_API URoadGraphEngineAcess : public UObject {
 	
 	GENERATED_BODY()
 
 public:
-	RoadGraphEngineAcess();
-	~RoadGraphEngineAcess();
+	URoadGraphEngineAcess();
+	~URoadGraphEngineAcess();
+
+	UFUNCTION(BlueprintCallable)
+	void StartProcess(float lat, float lon, float diam);
 
 };
