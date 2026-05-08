@@ -1,4 +1,9 @@
-# RoadLab
+
+<p align="center">
+  <img src="RoadLab_Logo.png" alt="RoadLab_Logo" width="400">
+</p>
+
+<h1 align="center">RoadLab</h1>
 
 RoadLab is a C++ project built with Unreal Engine, focused on recreating real-world road networks in a fully navigable 3D environment.
 
@@ -46,14 +51,3 @@ Current focus is on architecture, data import pipelines, and road generation sys
 - Terrain integration
 - AI traffic simulation
 - Vehicle physics testing
-
-
-## Repository Structure
-
-```text
-RoadLab/
-├── Config/
-├── Content/
-├── Source/
-├── Plugins/
-└── Docs/
