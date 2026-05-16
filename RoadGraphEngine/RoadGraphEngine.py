@@ -22,13 +22,5 @@ print("Latitude \t:", lat, "\t", type(lat))
 print("Longitude \t:", lon, "\t", type(lon))
 print("Diameter \t:", dia, "\t", type(dia))
 
-api_version = OSM_Access.Version()
-
-if api_version == None:
-    print("-- API error --")
-    exit()
-
-print("\nOpen Street Map API reachable\t Version :", api_version)
-
-if(not OSM_Access.GetTile(lat, lon, 1000)):
-   print("GetTileError")
+json_data = OSM_Access.getRoadList(lat, lon, dia)
+print(json_data["generator"], "\tVersion :", json_data["version"])
